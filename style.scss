@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    padding:0 20px 0 20px;
+} 
+@font-face {
+    font-family: 'Inter-VariableFont';
+    font-style: normal;
+    font-weight: 1 999; /* Диапазон весов шрифта (может быть настроен в соответствии с вашим шрифтом) */
+    font-stretch: 1% 100%; /* Диапазон наклона шрифта (может быть настроен в соответствии с вашим шрифтом) */
+    src: url('assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Inter-VariableFont', sans-serif;
+}
+button{
+    cursor: pointer;
+}
+.Header{
+   &__items{
+    width: 320px;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
+   }
+   &__btn{
+    border:none;
+    background: none;
+    cursor: pointer;
+   }
+}
+.Info{
+    &__img{
+        padding-top:10px;
+        border-radius: 3px;
+        height: 300px;
+        width:315px;
+        max-width: 400px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        border-radius:3px;
+    }
+    &__title{
+        font-size: 35px;
+        padding-top:10px;
+        width:280px;
+        line-height: 30px;
+    }
+    &__text{
+        font-size:20px;
+        padding-top:10px;
+        color:gray;
+    }
+    &__button{
+        background-color: orangered;
+        color:white;
+        font-weight: 800;
+        letter-spacing: 6px;
+        border: none;
+        border-radius: 3px;
+        height: 40px;
+        width: 200px;
+    }
+}
